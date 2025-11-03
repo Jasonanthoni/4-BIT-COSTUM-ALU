@@ -18,7 +18,7 @@ module alu_top (
 
     add U1 (.A(A), .B(B), .SUM(add_out[3:0]), .COUT(add_out[4]));
     sub U2 (.A(A), .B(B), .DIFF(sub_out[3:0]), .COUT(sub_out[4]));
-    mul U3 (.A(A), .B(B), .PROD(mul_out));
+    mul U3 (.A(A), .B(B), .product(mul_out));
     div U4 (.A(A), .B(B), .QUO(div_out));
     nand_g U5 (.A(A), .B(B), .Y(nand_out));
     not_g U6 (.A(A), .Y(not_out));
