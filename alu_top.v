@@ -1,13 +1,10 @@
-//=====================================================
-// 4-bit Modular ALU Top-Level Module
-// Author: Mango Milkshake
-//=====================================================
+
 module alu_top (
-    input  [3:0] A,          // 4-bit input A
-    input  [3:0] B,          // 4-bit input B
-    input  [2:0] opcode,     // 3-bit Opcode
-    output reg [7:0] result, // 8-bit output
-    output reg carry_out     // Carryout
+    input  [3:0] A,       
+    input  [3:0] B,         
+    input  [2:0] opcode,     
+    output reg [7:0] result, 
+    output reg carry_out    
 );
 
     wire [4:0] add_out;  
