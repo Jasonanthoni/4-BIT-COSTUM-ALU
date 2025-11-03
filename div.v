@@ -1,4 +1,4 @@
-module divider4 (
+module div (
     input  [3:0] A, B,      
     output reg [3:0] QUOTIENT,
     output reg [3:0] REMAINDER
@@ -12,4 +12,5 @@ module divider4 (
             REMAINDER = 4'b0000; 
         end
     end
+
 endmodule
