@@ -7,4 +7,3 @@ module add (
     assign {COUT, SUM} = A + B;     // add A and B
 
 endmodule
-
