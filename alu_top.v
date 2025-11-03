@@ -52,7 +52,7 @@ module alu_top (
                 result    = {4'b0000, not_out};
                 carry_out = 1'b0;
             end
-            3'b110: begin // CMP (1 if A > B else 0)
+            3'b110: begin // CMP 
                 result    = cmp_out;
                 carry_out = 1'b0;
             end
