@@ -16,14 +16,14 @@ module alu_top (
     wire [7:0] cmp_out;
     wire [7:0] avg_out;
 
-    add_module U1 (.A(A), .B(B), .SUM(add_out[3:0]), .COUT(add_out[4]));
-    sub_module U2 (.A(A), .B(B), .DIFF(sub_out[3:0]), .COUT(sub_out[4]));
-    mul_module U3 (.A(A), .B(B), .PROD(mul_out));
-    div_module U4 (.A(A), .B(B), .QUO(div_out));
-    nand_module U5 (.A(A), .B(B), .Y(nand_out));
-    not_module U6 (.A(A), .Y(not_out));
-    cmp_module U7 (.A(A), .B(B), .Y(cmp_out));
-    avg_module U8 (.A(A), .B(B), .Y(avg_out));
+    add U1 (.A(A), .B(B), .SUM(add_out[3:0]), .COUT(add_out[4]));
+    sub U2 (.A(A), .B(B), .DIFF(sub_out[3:0]), .COUT(sub_out[4]));
+    mul U3 (.A(A), .B(B), .PROD(mul_out));
+    div U4 (.A(A), .B(B), .QUO(div_out));
+    nand_g U5 (.A(A), .B(B), .Y(nand_out));
+    not_g U6 (.A(A), .Y(not_out));
+    cmp U7 (.A(A), .B(B), .Y(cmp_out));
+    avg U8 (.A(A), .B(B), .Y(avg_out));
 
    
     always @(*) begin
